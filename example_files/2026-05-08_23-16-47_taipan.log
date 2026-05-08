@@ -1,0 +1,34 @@
+[2026-05-08 - 23:16:47:313][INFO][NO TRACEID][MainThread][test.py]=== Test run started ===
+[2026-05-08 - 23:16:47:314][DEBUG][35f3a0ae][MainThread][path1_level1]|BeforeFunction| Argument infos: 0 xargs and 0 kwargs
+[2026-05-08 - 23:16:47:314][DEBUG][4d3ccd24][MainThread][path1_level2]|BeforeFunction| Argument infos: 
+    3 kwargs: [value] int(digits: 2), [label] str(length: 4), [tags] list[ str, str, str, ]
+[2026-05-08 - 23:16:47:315][DEBUG][95f738b4][MainThread][path1_level3]|BeforeFunction| Argument infos: 
+    2 kwargs: [value] int(digits: 2), [label] str(length: 4)
+[2026-05-08 - 23:16:47:321][ERROR][95f738b4][MainThread][path1_level3]ValueError: Original error in path 1
+[2026-05-08 - 23:16:47:322][DEBUG][20535ba3][MainThread][path2_level1]|BeforeFunction| Argument infos: 
+    2 kwargs: [config] dict{ host: str, port: int, debug: bool, }, [retries] int(digits: 1)
+[2026-05-08 - 23:16:47:322][DEBUG][d10efad6][MainThread][path2_level2]|BeforeFunction| Argument infos: 
+    1 kwargs: [config] dict{ host: str, port: int, debug: bool, }
+[2026-05-08 - 23:16:47:323][DEBUG][f468aa0c][MainThread][path3_level1]|BeforeFunction| Argument infos: 0 xargs and 0 kwargs
+[2026-05-08 - 23:16:47:323][DEBUG][b9eec3d7][MainThread][path3_level2]|BeforeFunction| Argument infos: 
+    3 kwargs: [matrix] list[ list, list, ], [scale] float(digits after comma: 2), [metadata] dict{ rows: int, cols: int, dtype: str, }
+[2026-05-08 - 23:16:47:323][DEBUG][fafe8b56][MainThread][path3_level3]|BeforeFunction| Argument infos: 
+    3 kwargs: [matrix] list[ list, list, ], [scale] float(digits after comma: 2), [metadata] dict{ rows: int, cols: int, dtype: str, }
+[2026-05-08 - 23:16:47:323][ERROR][f468aa0c][MainThread][path3_level1]ValueError: Converted error in path 3
+[2026-05-08 - 23:16:47:323][DEBUG][1e7242e1][MainThread][path4_outer]|BeforeFunction| Argument infos: 
+    2 xargs: [0] int(digits: 2), [1] callable
+    1 kwargs: [flag] bool
+[2026-05-08 - 23:16:47:323][DEBUG][479aa96e][MainThread][path4_inner]|BeforeFunction| Argument infos: 
+    4 kwargs: [items] list[ int, str, float, NoneType, bool, ], [mapping] dict{ x: int, y: int, z: int, }, [factor] float(digits after comma: 1), [name] str(length: 6)
+[2026-05-08 - 23:16:47:323][DEBUG][479aa96e][MainThread][path4_inner]|AfterFunction| Time needed 0.000s returns dict{ x: float, y: float, z: float, }
+[2026-05-08 - 23:16:47:323][DEBUG][1e7242e1][MainThread][path4_outer]|AfterFunction| Time needed 0.000s returns dict{ x: float, y: float, z: float, }
+[2026-05-08 - 23:16:47:376][DEBUG][ee17d35c][MainThread][path5_runner]|async||BeforeFunction| Argument infos: 
+    2 kwargs: [endpoints] list[ str, str, ], [options] dict{ timeout: int, retry: bool, }
+[2026-05-08 - 23:16:47:376][DEBUG][c1f6ecbe][MainThread][path5_fetch]|async||BeforeFunction| Argument infos: 
+    3 kwargs: [url] str(length: 25), [headers] dict{ Authorization: str, Accept: str, }, [timeout] int(digits: 2)
+[2026-05-08 - 23:16:47:378][DEBUG][c1f6ecbe][MainThread][path5_fetch]|async||AfterFunction| Time needed 0.000s returns dict{ status: int, body: str, }
+[2026-05-08 - 23:16:47:378][DEBUG][4c2d3e01][MainThread][path5_fetch]|async||BeforeFunction| Argument infos: 
+    3 kwargs: [url] str(length: 25), [headers] dict{ Authorization: str, Accept: str, }, [timeout] int(digits: 2)
+[2026-05-08 - 23:16:47:378][DEBUG][4c2d3e01][MainThread][path5_fetch]|async||AfterFunction| Time needed 0.000s returns dict{ status: int, body: str, }
+[2026-05-08 - 23:16:47:378][DEBUG][ee17d35c][MainThread][path5_runner]|async||AfterFunction| Time needed 0.000s returns list[ dict, dict, ]
+[2026-05-08 - 23:16:47:379][INFO][NO TRACEID][MainThread][test.py]=== Test run finished ===

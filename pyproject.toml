@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "taipan-logger"
-version = "1.0.1"
-description = "A lightweight, DSGVO-safe, threadsafe, async-ready Python logger."
+version = "2.0.0"
+description = "A lightweight, GDPR-safe, threadsafe, async-ready Python logger with zero dependencies."
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
@@ -14,8 +14,33 @@ authors = [
 requires-python = ">=3.12"
 dependencies = []
 
+keywords = [
+    "logger", "logging", "async", "async-logging",
+    "threadsafe", "thread-safe", "gdpr", "dsgvo",
+    "trace", "decorator", "microservice", "singleton",
+    "log-rotation", "rotation", "structured-logging",
+    "zero-dependencies", "zero-boilerplate", "python-logger",
+    "devops", "docker", "container", "debugging",
+    "monitoring", "tracing", "error-handling"
+]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Logging",
+    "Topic :: Software Development :: Debuggers",
+    "Environment :: No Input/Output (Daemon)",
+    "Typing :: Typed",
+]
+
 [project.urls]
-Homepage = "https://github.com/soss-community/taipan_logger"
+Homepage = "https://soss.page"
 Repository = "https://github.com/soss-community/taipan_logger"
 "Bug Tracker" = "https://github.com/soss-community/taipan_logger/issues"
 "Contact" = "https://github.com/soss-community"
